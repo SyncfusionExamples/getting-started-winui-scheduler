@@ -1,0 +1,69 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net5.0-windows10.0.19041.0</TargetFramework>
+		<TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+		<RootNamespace>SchedulerWinUI</RootNamespace>
+		<ApplicationManifest>app.manifest</ApplicationManifest>
+		<Platforms>x86;x64;arm64</Platforms>
+		<RuntimeIdentifiers>win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
+		<AssemblyName>SchedulerWinUI</AssemblyName>
+		<PackageId>SchedulerWinUI</PackageId>
+		<Authors>SchedulerWinUI</Authors>
+		<Product>SchedulerWinUI</Product>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+		<DefineConstants>WinUI_Desktop</DefineConstants>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'">
+	  <DefineConstants>WinUI_Desktop</DefineConstants>
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Remove="Assets\**" />
+		<Compile Remove="SchedulerWinUI_Desktop\**" />
+		<Compile Remove="SchedulerWinUI_Desktop\**" />
+		<Compile Remove="ViewModel\**" />
+		<Content Remove="Assets\**" />
+		<EmbeddedResource Remove="Assets\**" />
+		<EmbeddedResource Remove="SchedulerWinUI_Desktop\**" />
+		<EmbeddedResource Remove="SchedulerWinUI_Desktop\**" />
+		<EmbeddedResource Remove="ViewModel\**" />
+		<None Remove="Assets\**" />
+		<None Remove="SchedulerWinUI_Desktop\**" />
+		<None Remove="SchedulerWinUI_Desktop\**" />
+		<None Remove="ViewModel\**" />
+		<Page Remove="Assets\**" />
+		<Page Remove="SchedulerWinUI_Desktop\**" />
+		<Page Remove="SchedulerWinUI_Desktop\**" />
+		<Page Remove="ViewModel\**" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Remove="MainPage.xaml.cs" />
+		<Compile Remove="Properties\AssemblyInfo.cs" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Remove="MainPage.xaml" />
+		<None Remove="Properties\Default.rd.xml" />
+	</ItemGroup>
+	<ItemGroup>
+		<Page Remove="MainPage.xaml" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="ViewModel\SchedulerViewModel.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.ProjectReunion" Version="0.5.6" />
+		<PackageReference Include="Microsoft.ProjectReunion.Foundation" Version="0.5.6" />
+		<PackageReference Include="Microsoft.ProjectReunion.WinUI" Version="0.5.6" />
+		<PackageReference Include="Syncfusion.Core.WinUI" Version="19.2.0.37-beta" />
+		<PackageReference Include="Syncfusion.Editors.WinUI" Version="19.2.0.37-beta" />
+		<PackageReference Include="Syncfusion.Scheduler.WinUI" Version="19.2.0.37-beta" />
+		<Manifest Include="$(ApplicationManifest)" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Update="Microsoft.Windows.SDK.NET.Ref" RuntimeFrameworkVersion="10.0.18362.16" />
+    <FrameworkReference Update="Microsoft.Windows.SDK.NET.Ref" TargetingPackVersion="10.0.18362.16" />
+  </ItemGroup>
+</Project>
