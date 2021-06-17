@@ -123,13 +123,13 @@
       <Version>6.2.12</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Core.WinUI">
-      <Version>19.2.0.37-beta</Version>
+      <Version>19.1.0.69-beta</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Editors.WinUI">
-      <Version>19.2.0.37-beta</Version>
+      <Version>19.1.0.69-beta</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Scheduler.WinUI">
-      <Version>19.2.0.37-beta</Version>
+      <Version>19.1.0.69-beta</Version>
     </PackageReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '$(MinimumVisualStudioVersion)' ">

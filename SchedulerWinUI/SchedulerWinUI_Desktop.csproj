@@ -53,17 +53,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.ProjectReunion" Version="0.5.6" />
+		<PackageReference Include="Microsoft.ProjectReunion" Version="0.5.0" />
 		<PackageReference Include="Microsoft.ProjectReunion.Foundation" Version="0.5.6" />
 		<PackageReference Include="Microsoft.ProjectReunion.WinUI" Version="0.5.6" />
-		<PackageReference Include="Syncfusion.Core.WinUI" Version="19.2.0.37-beta" />
-		<PackageReference Include="Syncfusion.Editors.WinUI" Version="19.2.0.37-beta" />
-		<PackageReference Include="Syncfusion.Scheduler.WinUI" Version="19.2.0.37-beta" />
+		<PackageReference Include="Syncfusion.Core.WinUI" Version="19.1.0.69-beta" />
+		<PackageReference Include="Syncfusion.Editors.WinUI" Version="19.1.0.69-beta" />
+		<PackageReference Include="Syncfusion.Scheduler.WinUI" Version="19.1.0.69-beta" />
 		<Manifest Include="$(ApplicationManifest)" />
 	</ItemGroup>
 
-  <ItemGroup>
-    <FrameworkReference Update="Microsoft.Windows.SDK.NET.Ref" RuntimeFrameworkVersion="10.0.18362.16" />
-    <FrameworkReference Update="Microsoft.Windows.SDK.NET.Ref" TargetingPackVersion="10.0.18362.16" />
-  </ItemGroup>
 </Project>
