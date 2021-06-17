@@ -79,7 +79,7 @@
       <ExcludeAssets>all</ExcludeAssets>
     </PackageReference>
     <PackageReference Include="Syncfusion.Core.WinUI">
-      <Version>19.1.0.69-beta</Version>
+      <Version>19.1.0.68-beta</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Editors.WinUI">
       <Version>19.1.0.69-beta</Version>
